@@ -3,7 +3,7 @@
 xpProOption(node-addon-api)
 set(VER 3.0.2)
 set(REPO https://github.com/nodejs/node-addon-api)
-set(FORK https://github.com/externpro/node-addon-api)
+set(FORK https://github.com/italian-plummers/node-addon-api)
 set(PRO_NODE-ADDON-API
   NAME node-addon-api
   WEB "node-addon-api" ${REPO} "node-addon-api on github"
