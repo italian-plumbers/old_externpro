@@ -15,10 +15,10 @@ set(PRO_BOOST
   VER ${VER}
   GIT_ORIGIN ${REPO}
   GIT_TAG boost-${VER} # what to 'git checkout'
-  DLURL https://boostorg.jfrog.io/artifactory/main/release/${VER}/source/boost_${VER_}.tar.bz2
+  DLURL https://archives.boost.io/release/${VER}/source/boost_${VER_}.tar.bz2
   DLMD5 33334dd7f862e8ac9fe1cc7c6584fb6d
   DEPS_FUNC build_boost
-  SUBPRO boostbeast boostdll boostgil boostgraph boostinstall boostinterprocess boostprogram_options boostprogram_optionshpp boostregex boostunits
+  SUBPRO boostbeast boostdll boostgil boostgraph boostinstall boostinterprocess boostprogram_options boostprocess boostprogram_optionshpp boostregex boostunits
   )
 function(build_boost)
   if(NOT (XP_DEFAULT OR XP_PRO_BOOST))

@@ -3,7 +3,7 @@
 set(VER 14.17.6)
 xpProOption(nodejs)
 set(REPO https://github.com/nodejs/node)
-set(FORK https://github.com/externpro/node)
+set(FORK https://github.com/italian-plumbers/node)
 set(PRO_NODEJS
   NAME nodejs
   WEB "Node.js" http://nodejs.org "Node.js website"

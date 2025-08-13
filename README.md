@@ -1,12 +1,12 @@
 # externpro
 
-[![GitHub license](https://img.shields.io/github/license/smanders/externpro.svg)](https://github.com/smanders/externpro) [![GitHub release](https://img.shields.io/github/release/smanders/externpro.svg)](https://github.com/smanders/externpro)
+[![GitHub license](https://img.shields.io/github/license/italian-plumbers/old_externpro.svg)](https://github.com/italian-plumbers/old_externpro) [![GitHub release](https://img.shields.io/github/release/italian-plumbers/old_externpro.svg)](https://github.com/italian-plumbers/old_externpro)
 
 an extensible project to build (or copy pre-built) external (3rd-party) [projects](projects/README.md)
 
 ## description
 
-externpro supports options for [4 steps](https://github.com/smanders/externpro/blob/15.10.2/modules/macpro.cmake#L67-L72): mkpatch (make patch), download, patch, build -- with patch being the default option
+externpro supports options for [4 steps](https://github.com/italian-plumbers/old_externpro/blob/15.10.2/modules/macpro.cmake#L67-L72): mkpatch (make patch), download, patch, build -- with patch being the default option
 
 externpro makes heavy use of cmake's [ExternalProject](http://www.kitware.com/media/html/BuildingExternalProjectsWithCMake2.8.html) module
 
@@ -54,14 +54,14 @@ to build and use externpro from another project you can either create a *build v
 
 a build version is created by simply building externpro and an installed version involves building, making the package (aka installer), and installing
 
-one difference between a build version and an installed version is where the find script looks to find externpro - you can see the PATHS searched, in order, in the [find script](https://github.com/smanders/externpro/blob/20.10.1/modules/Findscript.cmake.in#L80-L88)
+one difference between a build version and an installed version is where the find script looks to find externpro - you can see the PATHS searched, in order, in the [find script](https://github.com/italian-plumbers/old_externpro/blob/20.10.1/modules/Findscript.cmake.in#L80-L88)
 
 if you always plan to use an installed version the path to the source and build directories doesn't matter -- only the path where it is installed matters, unless you use an environment variable (examine the find script for suitable install locations)
 
 unless you have a reason to use an old release (`git checkout <tag>`) or have a reason to use a development version (`git checkout -b dev origin/dev` -- where development == not ready for release), you should be using the master branch (which is always the latest release)
 
 ```bash
-git clone https://github.com/smanders/externpro
+git clone https://github.com/italian-plumbers/old_externpro
 cd externpro
 git submodule init
 git submodule update
